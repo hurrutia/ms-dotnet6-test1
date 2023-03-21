@@ -11,7 +11,7 @@ var app = builder.Build();
 app.MapGet("/", () =>
 {
     app.Logger.LogInformation("Initial Home Get");
-    return "GET - Net 6 Running ... Hernan-v4.0.0 CI/CD in AKS v1.0.0 ";
+    return "GET - Net 6 Running ... Hernan-v5.0.0 CI/CD in AKS v1.0.0 " + DateTime.Now.ToString();
 });
 
 app.MapPost("/", () =>
